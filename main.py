@@ -1,9 +1,4 @@
 from fastapi import FastAPI
-from fastapi.params import Body
-from fastapi.params import Optional
-from pydantic import BaseModel
-
-from typing import List
 
 from db.Models import Account
 from db.Models import ListOfMissed
@@ -26,8 +21,6 @@ from API.Item_Functions import delete_item
 
 from API.Item_Functions import create_link
 from API.Item_Functions import delete_link
-
-import requests
 
 app = FastAPI()
 
